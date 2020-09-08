@@ -14,6 +14,6 @@ There is a [readme](https://github.com/barryclark/jekyll-now) on Github and a mo
 
 ###Fast steps to start
 1. Fork [jekyll-now](https://github.com/barryclark/jekyll-now) 
-2. Change `_config.yml` and `about.md`.
+2. Change `_config.yml`, `about.md` and `images\jekyll-logo.png`.
 3. Add posts in `repo\_posts\YYYY-MM-DD-TitleHere.md`. Note for MM-DD you need to remove leading zeroes.
 4. You may see new post in `_posts` in your main page.
