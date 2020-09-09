@@ -82,9 +82,8 @@ References:
 2. If return value doesn't matter, choose `pthread_detach`.
 3. Note: if a thread is joinable, `pthread_t` would hold the resource until it's joined or detached.
 
-*[Difference between pthread_exit, pthread_join and pthread_detach](https://stackoverflow.com/questions/22427007/difference-between-pthread-exit-pthread-join-and-pthread-detach)
-
 Overall Reference:
+* [Difference between pthread_exit, pthread_join and pthread_detach](https://stackoverflow.com/questions/22427007/difference-between-pthread-exit-pthread-join-and-pthread-detach)
 * [Thread (CHT)](https://www.kshuang.xyz/doku.php/course:nctu-%E9%AB%98%E7%AD%89unix%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88:chapter11)
 * [Prority Inversion(Wiki)](http://en.wikipedia.org/wiki/Priority_inversion)
 * [Prority Inversion(CHT)](http://blog.linux.org.tw/~jserv/archives/001299.html)
