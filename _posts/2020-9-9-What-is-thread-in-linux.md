@@ -31,7 +31,7 @@ References:
 3. After linux kernel 2.6, the implementation of `pthread` is NPTL.
 
 ### Hands-On
-Online compiler https://godbolt.org/z/MKKzhe
+Online compiler example https://godbolt.org/z/MKKzhe
 ```
 #include <sys/types.h>
 #include <unistd.h>
@@ -75,8 +75,14 @@ int main(void)
 References:
 *[`pthread_create`](https://man7.org/linux/man-pages/man3/pthread_create.3.html)
 *[`pthread_attr_t` and `pthread_attr_init`](https://man7.org/linux/man-pages/man3/pthread_attr_init.3.html)
-
 *[Usage of pthread(llnl)](https://computing.llnl.gov/tutorials/pthreads/)
+
+## Join or Detach?
+1. If return value is needed, `pthread_join` would obtain the return value.
+2. If return value doesn't matter, choose `pthread_detach`.
+3. Note: if a thread is joinable, `pthread_t` would hold the resource until it's joined or detached.
+
+*[Difference between pthread_exit, pthread_join and pthread_detach](https://stackoverflow.com/questions/22427007/difference-between-pthread-exit-pthread-join-and-pthread-detach)
 
 Overall Reference:
 *[Thread (CHT)](https://www.kshuang.xyz/doku.php/course:nctu-%E9%AB%98%E7%AD%89unix%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88:chapter11)
