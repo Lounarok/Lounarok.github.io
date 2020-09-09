@@ -27,7 +27,7 @@ References:
 
 ### History of Thread in Linux
 1. [LinuxThread](https://en.wikipedia.org/wiki/LinuxThreads) first came out but it has some problems (Eg: process ID is the same so signal handling is complex).
-2. Then [Native POSIX Thread Library(NPTL)](https://en.wikipedia.org/wiki/Native_POSIX_Thread_Library)
+2. Then [Native POSIX Thread Library(NPTL)](https://en.wikipedia.org/wiki/Native_POSIX_Thread_Library) became the mainstream.
 3. After linux kernel 2.6, the implementation of `pthread` is NPTL.
 
 ### Hands-On
