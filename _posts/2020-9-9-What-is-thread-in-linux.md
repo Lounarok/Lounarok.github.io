@@ -31,7 +31,7 @@ References:
 3. After linux kernel 2.6, the implementation of `pthread` is NPTL.
 
 ### Hands-On
-Online compiler example https://godbolt.org/z/MKKzhe
+[Online compiler example](https://godbolt.org/z/MKKzhe)
 ```
 #include <sys/types.h>
 #include <unistd.h>
