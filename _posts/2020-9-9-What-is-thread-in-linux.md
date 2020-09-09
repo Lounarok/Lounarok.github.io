@@ -73,9 +73,9 @@ int main(void)
 ```
 
 References:
-*[`pthread_create`](https://man7.org/linux/man-pages/man3/pthread_create.3.html)
-*[`pthread_attr_t` and `pthread_attr_init`](https://man7.org/linux/man-pages/man3/pthread_attr_init.3.html)
-*[Usage of pthread(llnl)](https://computing.llnl.gov/tutorials/pthreads/)
+* [`pthread_create`](https://man7.org/linux/man-pages/man3/pthread_create.3.html)
+* [`pthread_attr_t` and `pthread_attr_init`](https://man7.org/linux/man-pages/man3/pthread_attr_init.3.html)
+* [Usage of pthread(llnl)](https://computing.llnl.gov/tutorials/pthreads/)
 
 ## Join or Detach?
 1. If return value is needed, `pthread_join` would obtain the return value.
