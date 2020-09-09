@@ -26,8 +26,8 @@ footer-links:
   linkedin: chun-hsi-wu-5b004463
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter:#
-  stackoverflow:users/4123703/louis-go # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: #
+  stackoverflow: users/4123703/louis-go # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
