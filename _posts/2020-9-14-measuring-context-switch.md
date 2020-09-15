@@ -1,4 +1,9 @@
-## Evaluate linux context switch on linux
+---
+layout: post
+title: Evaluate linux context switch on linux
+tag: linux thread context switch benchmark measuring 
+---
+
 My next porject is porting a system from wince (Yes...it's WinCE!) to linux.
 On WinCE there is a special design memory model for compressing object memory for every non driver library. ( Read the memory section about this [post](https://docs.microsoft.com/en-us/archive/msdn-magazine/2000/november/windows-ce-3-0-enhanced-real-time-features-provide-sophisticated-thread-handling) ).
 My first thought is to evaluate context switch time because the communication between UI and underlying logic would switch a lot.
