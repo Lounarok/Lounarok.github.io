@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Evaluate linux context switch on linux
+title: Measuring linux context switch time
 tag: linux thread context switch benchmark measuring 
 ---
 
@@ -56,8 +56,10 @@ Average context switch costs 27132.8 ns ~= 27.1 us.
 One iteration ~= 45.6 us. Nearly twice of context switch time, legit.
 
 
-## WSL2 Ubuntu 20.04
-  
+## MSI GF638RC - WSL2
+* i7-8750H 2.2GHz
+* Host OS: Win10 2004 19041.508
+* Guest: Ubuntu 20.04
 ### `./thread-switch-pipe`
 ```
 measure_self_pipe: 377100100 ns for 100000 iterations (3771.00 ns / iter)
@@ -89,8 +91,8 @@ From getrusage:
 63194.82 iters/sec ~= 15.8 us/iter 
 
 
-## MSI GF638RC 
-* ( i7-8750H ) 2.2GHz
+## MSI GF638RC - VM
+* i7-8750H 2.2GHz
 * Host OS: Win10 2004 19041.508
 * VM: VMWare-player with single processor
 * Guest OS: Ubuntu 20.04 with *single* processor
