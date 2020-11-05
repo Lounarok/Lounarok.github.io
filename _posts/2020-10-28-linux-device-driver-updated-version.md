@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modern Linux device driver: Where to start and what not should be used for hardware register read/write, gpio and irq handling.
-tag: linux device driver kernel module gpio gpiod ioremap request_irq request_threaded_irq irq handling
+tag: linux device driver kernel module gpio gpiod ioremap request_irq request_threaded_irq irq handling robert love
 ---
 
 
@@ -19,7 +19,7 @@ This article would focus on what you should find and what should not be used.
 4. https://www.kernel.org is your good friend.
 
 References
-
+- Linux Kernel Development by Robert Love
 - [Kernel.org documentation](https://www.kernel.org/doc/html/latest/index.html)
 - [Unreliable Guide To Hacking The Linux Kernel](https://www.kernel.org/doc/html/latest/kernel-hacking/hacking.html)
 - [Linux Kernel Labs](https://linux-kernel-labs.github.io/refs/heads/master/)
