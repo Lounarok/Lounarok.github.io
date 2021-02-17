@@ -52,7 +52,38 @@ rsync -av --progress sourcefolder /destinationfolder --exclude thefoldertoexclud
 # Show directory size
 du -sh (or sudo du -sh )
 
-#Kernel Module do not allow printk with float point
+# Kernel Module do not allow printk with float point
 
 https://stackoverflow.com/a/13886805/4123703
 https://stackoverflow.com/questions/31131012/why-printk-in-linux-kernel-modules-lacks-floating-point-support-unlike-printf
+
+
+# Programming: high resolution timer
+
+A easier way to get time in ns
+
+````
+static inline unsigned long long time_ns() {
+  struct timespec ts;
+  if (clock_gettime(CLOCK_REALTIME, &ts)) {
+    exit(1);
+  }
+  return ((unsigned long long)ts.tv_sec) * 1000000000LLU +
+         (unsigned long long)ts.tv_nsec;
+}
+````
+NOTE: printf need to use %llu to print.
+
+# Upload files through scp
+
+````
+#!/bin/bash
+targetip=10.10.40.183
+scp {CallerOfPAPI.out,PlatformAPI.so} root@$targetip:/home/root/code/
+````
+
+# Check if an executable is dynamically linked
+`readelf -d <filename>`
+
+# Check so symbol
+nm -g --defined-only <filename>
